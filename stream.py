@@ -50,6 +50,7 @@ def generate_transaction():
     # Convert dictionary to JSON format
     json_transaction = json.dumps(transaction_details, indent=2)
     print(json_transaction)
+    return json_transaction
 
 if __name__ == "__main__":
     while True:
