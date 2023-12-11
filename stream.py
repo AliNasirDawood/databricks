@@ -123,7 +123,6 @@ def generate_transaction():
 @app.route('/generate_transaction', methods=['GET'])
 def get_transaction():
     transaction_data = generate_transaction()
-    print(trasaction_data)
     return jsonify({'transaction': transaction_data})
 
 if __name__ == "__main__":
